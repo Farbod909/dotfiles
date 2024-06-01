@@ -230,13 +230,21 @@ window-margin-size: 8
 
 # The max number of windows that may be visible on a screen at one time before
 # additional windows are minimized. A value of 0 disables the feature.
-window-max-count: 4
+window-max-count: 0
 
 # The smallest height that a window can be sized to regardless of its layout frame (in px, default 0).
 window-minimum-height: 0
 
 # The smallest width that a window can be sized to regardless of its layout frame (in px, default 0)
 window-minimum-width: 0
+
+# List of bundle identifiers for applications to either be automatically floating or automatically tiled based on floating-is-blacklist (default []).
+floating: [
+  "com.apple.calculator",
+  "com.apple.Dictionary",
+  "com.apple.systempreferences",
+  "com.hegenberg.BetterTouchTool"
+]
 
 # Boolean flag determining behavior of the floating list. true if the applications should be floating and all others tiled. false if the applications should be tiled and all others floating (default true).
 floating-is-blacklist: true
