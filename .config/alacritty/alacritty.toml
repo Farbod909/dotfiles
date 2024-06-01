@@ -1,0 +1,12 @@
+[window]
+padding.x = 10
+padding.y = 10
+
+decorations = "Buttonless"
+
+[font]
+normal.family = "MesloLGS Nerd Font Mono"
+size = 14
+
+[colors.primary]
+background = "#171d33"
