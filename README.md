@@ -97,7 +97,9 @@ If you would like to update the config in this local repo based on changes made 
 # Then, make a commit / pull request.
 ```
 
-# Login items
+If you've changed any BetterTouchTool settings or presets, you can also export that preset using the BTT UI, and include it in your commit.
+
+## Login items
 I recommend setting the following apps to run on startup.
 - Amethyst
 - BetterTouchTool
