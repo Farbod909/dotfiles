@@ -35,10 +35,8 @@ Install [Alacritty](https://github.com/alacritty/alacritty) (terminal).
 brew install --cask alacritty
 ```
 
-Open Alacritty.
-Tip: you may have to go to Settings > Privacy & Security and click on "Open anyway".
-
 Once Alacritty is installed, you may close your default terminal app and open Alacritty instead.
+Tip: you may have to go to Settings > Privacy & Security and click on "Open anyway".
 
 Perform the following installations in order:
 ```zsh
@@ -50,8 +48,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Install Amethyst (https://github.com/ianyh/Amethyst)
 brew install --cask amethyst
-# Launch Amethyst from the Applications folder.
-# Tip: Amethyst must be given permissions to use the accessibility APIs in the Privacy & Security tab, Privacy -> Accessibilty.
 
 # Install JankyBorders (https://github.com/FelixKratz/JankyBorders)
 brew tap FelixKratz/formulae
@@ -77,9 +73,9 @@ NOTE: This will overwrite any existing config if there is one. Make sure you hav
 ./set-config.command
 ```
 At this point to see all your changes applied:
-- Run `source .zshrc`
 - Quit Alacritty and re-open.
-- Relaunch Amethyst and watch it tile your windows.
+- Run `source .zshrc`
+- Launch Amethyst from the Applications folder.
 - Start JankyBorders with `brew services start borders`.
 
 ## Other necessary apps
