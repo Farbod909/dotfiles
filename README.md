@@ -34,6 +34,8 @@ Install [Alacritty](https://github.com/alacritty/alacritty) (terminal).
 ```zsh
 brew install --cask alacritty
 ```
+
+Open Alacritty.
 Tip: you may have to go to Settings > Privacy & Security and click on "Open anyway".
 
 Once Alacritty is installed, you may close your default terminal app and open Alacritty instead.
@@ -48,12 +50,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Install Amethyst (https://github.com/ianyh/Amethyst)
 brew install --cask amethyst
+# Launch Amethyst from the Applications folder.
 # Tip: Amethyst must be given permissions to use the accessibility APIs in the Privacy & Security tab, Privacy -> Accessibilty.
 
 # Install JankyBorders (https://github.com/FelixKratz/JankyBorders)
 brew tap FelixKratz/formulae
-brew install borders
-brew services start borders 
+brew install borders 
 
 # Install a font that supports special characters
 brew install font-meslo-lg-nerd-font
@@ -73,8 +75,12 @@ Set config dotfiles from this repo to the current machine.
 NOTE: This will overwrite any existing config if there is one. Make sure you have a backup of `.zshrc`, `.oh-my-zsh/` and `.config/` if you would like to keep your existing config as well.
 ```zsh
 ./set-config.command
-source .zshrc
 ```
+At this point to see all your changes applied:
+- Run `source .zshrc`
+- Quit Alacritty and re-open.
+- Relaunch Amethyst and watch it tile your windows.
+- Start JankyBorders with `brew services start borders`.
 
 ## Other necessary apps
 - [BetterTouchTool](https://folivora.ai/)
