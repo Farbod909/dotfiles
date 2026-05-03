@@ -67,7 +67,7 @@ git_time_since_commit() {
 }
 
 git_custom_prompt() {
-  local branch=$(current_branch)
+  local branch=$(git_current_branch)
   if [ -n "$branch" ]; then
     echo "$ZSH_THEME_GIT_PROMPT_PREFIX$(git_symbol) $(colorize 242 $branch) : $(git_time_since_commit) : $(parse_git_dirty)$ZSH_THEME_GIT_PROMPT_SUFFIX"
   fi

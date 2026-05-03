@@ -10,8 +10,3 @@ size = 14
 
 [colors.primary]
 background = "#171d33"
-
-[[keyboard.bindings]]
-key = "Return"
-mods = "Shift"
-chars = "\u001B\r"

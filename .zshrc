@@ -59,7 +59,10 @@ ZSH_THEME="farbod"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  poetry
+  git
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,3 +97,15 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 alias ls="eza --icons=always"
 alias sublime="open -a sublime\ text"
+alias python=python3
+alias pip=pip3
+
+# Created by `pipx` on 2024-11-03 20:35:26
+export PATH="$PATH:/Users/farbodrafezy/.local/bin"
+fpath+=~/.zfunc
+autoload -Uz compinit && compinit
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/farbodrafezy/.lmstudio/bin"
+# End of LM Studio CLI section
+
